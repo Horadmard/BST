@@ -1,5 +1,7 @@
+#include <iostream>
 using namespace std;
 
+// In binary trees every node has three part: value, right node and left node
 class Node
 {
 
@@ -26,7 +28,7 @@ public:
 };
 
 // Every tree defines by it's root if we have a root we can navigate all nodes
-class Tree 
+class Tree
 {
 private:
     Node *root;
