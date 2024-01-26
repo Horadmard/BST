@@ -25,7 +25,8 @@ public:
     friend class Tree;
 };
 
-class Tree
+// Every tree defines by it's root if we have a root we can navigate all nodes
+class Tree 
 {
 private:
     Node *root;
