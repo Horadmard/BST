@@ -1,29 +1,10 @@
+#include "Node.cpp"
+#include "Tree.cpp"
+#include <iostream>
+
 using namespace std;
 
-class Node
-{
 
-    // private:
-public:
-    double value;
-    Node *right;
-    Node *left;
-    Node()
-    {
-        value = -9999;
-        right = nullptr;
-        left = nullptr;
-    }
-    Node(double val)
-    {
-        value = val;
-        right = nullptr;
-        left = nullptr;
-    }
-
-    friend class Tree;
-};
-// Every tree defines by it's root if we have a root we can navigate all nodes
 class Tree
 {
     // private:
