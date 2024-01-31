@@ -1,6 +1,6 @@
 #include "Node.cpp"
 #include "Binary_Tree.cpp"
-#include "functions.cpp"
+#include "func.cpp"
 #include <iostream>
 
 using namespace std;
