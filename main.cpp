@@ -2,10 +2,7 @@
 #include "Binary_Tree.cpp"
 #include "func.cpp"
 #include <iostream>
-
 using namespace std;
-
-bool Search_tree(Tree T, double val);
 
 int main()
 {
@@ -16,33 +13,4 @@ int main()
 
     cout << Search_tree(T1, 3);
     return 0;
-}
-
-// In binary trees every node has three part: value, right node and left node
-bool Search_tree(Tree T, double val)
-{
-    Node *nav = T.root;
-
-    if (nav == nullptr)
-    {
-        cout << "\nTree is empty\n";
-        return 0;
-    }
-
-    while (nav != nullptr)
-    {
-        if (nav->value == val)
-        {
-            cout << "\nfounded!\n";
-            return 1;
-        }
-        else if (val > nav->value)
-            nav = nav->right;
-        else
-            nav = nav->left;
-    }
-    cout << "\nnot found!\n";
-    return 0;
-
-    delete nav;
 }
