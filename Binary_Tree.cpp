@@ -1,5 +1,5 @@
-// In binary trees every node has three part: value, right node and left node
-// ------------------------------------------ implantation binary tree
+// A BTree is a pointer to the root
+// ------------------------------------------ implantation Binary Tree
 class Tree
 {
     // private:
