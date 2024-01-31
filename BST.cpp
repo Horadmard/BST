@@ -70,7 +70,7 @@ public:
     }
 };
 
-bool BST(Tree T, double val);
+bool Search_tree(Tree T, double val);
 
 int main()
 {
@@ -79,12 +79,12 @@ int main()
     for (size_t i = 0; i < 5; i++)
         T1.Insert_node(i - 1);
 
-    cout << BST(T1, 3);
+    cout << Search_tree(T1, 3);
     return 0;
 }
 
 // In binary trees every node has three part: value, right node and left node
-bool BST(Tree T, double val)
+bool Search_tree(Tree T, double val)
 {
     Node *nav = T.root;
 
