@@ -44,18 +44,25 @@ public:
     }
     void Insert_node(double &val){
         Node* nav = root;
+        Node* pre;
+
 
         if(nav == nullptr)
             Create_tree(val);
         else{
-            while(nav != nullptr)
+            while(nav != nullptr){
+                pre = nav;
                 if(val >= nav->value)
                     nav = nav->right
                 else
                     nav = nav->left
+            }
+
+            new_node = new Node(val);
+            if(val >= pre->value) pre->right = new_node;
+            else pre->left = new_node;
         }
-        new_node = new Node(val);
-        delete nav;
+        delete nav, pre;
     }
 };
 
