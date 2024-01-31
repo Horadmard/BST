@@ -13,7 +13,7 @@ private:
 public:
     Node()
     {
-        value = 0;
+        value = -9999;
         right = nullptr;
         left = nullptr;
     }
@@ -38,16 +38,24 @@ public:
     {
         root = nullptr;
     }
-    ~Tree()
-    {
-        delete root->right;
-        delete root->left;
+    void Create_tree(double &val){
+        root = new Node(val);
+        return;
     }
-    void create_tree()
-    {
-        root = new Node;
-        root->right = nullptr;
-        root->left = nullptr;
+    void Insert_node(double &val){
+        Node* nav = root;
+
+        if(nav == nullptr)
+            Create_tree(val);
+        else{
+            while(nav != nullptr)
+                if(val >= nav->value)
+                    nav = nav->right
+                else
+                    nav = nav->left
+        }
+        new_node = new Node(val);
+        delete nav;
     }
 };
 
