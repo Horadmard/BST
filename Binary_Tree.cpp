@@ -1,5 +1,5 @@
 // A BTree is a pointer to the root
-// ------------------------------------------ implantation Binary Tree
+// ------------------------------------------ Implantation Binary Tree
 class Tree
 {
     // private:
