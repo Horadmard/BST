@@ -62,3 +62,5 @@ bool Binary_Search(Tree T, double val)
 
     delete nav;
 }
+
+// ------------------------------------------
