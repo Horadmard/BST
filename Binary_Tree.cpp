@@ -1,4 +1,5 @@
 // In binary trees every node has three part: value, right node and left node
+// ------------------------------------------ implantation binary tree
 class Tree
 {
     // private:
