@@ -49,7 +49,9 @@ bool Binary_Search(Tree T, double val)
     {
         if (nav->value == val)
         {
-            cout << "\nfounded!\n";
+            cout << endl
+                 << val << "\nFound!\n";
+            cout << "----------\n";
             return 1;
         }
         else if (val > nav->value)
@@ -57,7 +59,9 @@ bool Binary_Search(Tree T, double val)
         else
             nav = nav->left;
     }
-    cout << "\nnot found!\n";
+    cout << endl
+         << val << "\nNot found!\n";
+    cout << "----------\n";
     return 0;
 
     delete nav;
