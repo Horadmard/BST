@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+// ------------------------------------------
+
 void Tree::Insert_node(double val)
 {
     Node *nav = root;
@@ -30,6 +32,8 @@ void Tree::Insert_node(double val)
     delete nav, pre;
     return;
 }
+
+// ------------------------------------------
 
 bool Search_tree(Tree T, double val)
 {

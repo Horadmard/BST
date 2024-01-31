@@ -1,6 +1,5 @@
 class Node
 {
-
     // private:
 public:
     double value;
