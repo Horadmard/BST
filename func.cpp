@@ -35,7 +35,7 @@ void Tree::Insert_node(double val)
 
 // ------------------------------------------
 
-bool Search_tree(Tree T, double val)
+bool Binary_Search(Tree T, double val)
 {
     Node *nav = T.root;
 

@@ -12,6 +12,6 @@ int main()
     for (size_t i = 0; i < 5; i++)
         T1.Insert_node(i - 1);
 
-    Search_tree(T1, 3);
+    Binary_Search(T1, 3);
     return 0;
 }
