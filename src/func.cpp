@@ -1,40 +1,38 @@
+
+
 #include <iostream>
 using namespace std;
-// this is a test
 
-// ------------------------------------------
 
 void Tree::Insert_node(double val)
 {
+
     Node *nav = root;
     Node *pre;
 
-    if (root == nullptr)
-    {
-        root = new Node(val);
-    }
+    if (root == nullptr) root = new Node(val);
     else
     {
         while (nav != nullptr)
         {
             pre = nav;
-            if (val >= nav->value)
-                nav = nav->right;
-            else
-                nav = nav->left;
+
+            if (val >= nav->value) nav = nav->right;
+            else nav = nav->left;
         }
 
         Node *new_node = new Node(val);
-        if (val >= pre->value)
-            pre->right = new_node;
-        else
-            pre->left = new_node;
+
+        if (val >= pre->value) pre->right = new_node;
+        else pre->left = new_node;
     }
+
     delete nav, pre;
+
     return;
 }
 
-// ------------------------------------------
+
 
 bool Binary_Search(Tree T, double val)
 {
@@ -53,19 +51,22 @@ bool Binary_Search(Tree T, double val)
             cout << endl
                  << val << "\nFound!\n";
             cout << "----------\n";
+
             return 1;
         }
-        else if (val > nav->value)
-            nav = nav->right;
-        else
-            nav = nav->left;
+
+        else if (val > nav->value) nav = nav->right;
+
+        else nav = nav->left;
+
     }
     cout << endl
          << val << "\nNot found!\n";
     cout << "----------\n";
-    return 0;
 
     delete nav;
+
+    return 0;
+
 }
 
-// ------------------------------------------

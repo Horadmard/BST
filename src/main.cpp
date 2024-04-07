@@ -1,9 +1,11 @@
+
+
 #include "Node.cpp"
 #include "Binary_Tree.cpp"
 #include "func.cpp"
+
 using namespace std;
 
-// ------------------------------------------ Test
 
 int main()
 {
@@ -14,7 +16,8 @@ int main()
 
     Binary_Search(T1, 500);
     Binary_Search(T1, 1500);
+
     return 0;
 }
 
-// ------------------------------------------
+
